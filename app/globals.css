@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 5%; /* #0E0E0E */
+    --foreground: 0 0% 100%; /* Pure White */
+
+    --card: 0 0% 12%; /* #1F1F1F */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%; /* Pure White */
+    --primary-foreground: 24 100% 46%; /* #e85d01 based */
+
+    --primary-container: 24 100% 46%; /* #e85d01 */
+    --primary-container-foreground: 0 0% 10%; /* Dark Gray */
+
+    --secondary: 19 50% 46%; /* #b2613b */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 11%;
+    --muted-foreground: 0 0% 64%;
+
+    --accent: 0 0% 21%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 11%;
+    --input: 0 0% 11%; /* #1B1B1B equivalent */
+    --ring: 24 100% 46%;
+
+    --surface-lowest: 0 0% 5%; /* #0E0E0E */
+    --surface: 0 0% 7%; /* #131313 */
+    --surface-container-low: 0 0% 11%; /* #1B1B1B */
+    --surface-container: 0 0% 12%; /* #1F1F1F */
+    --surface-highest: 0 0% 21%; /* #353535 */
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Kinetic Precision Typographic scale */
+  .text-display-lg {
+    @apply font-display text-[3.5rem] leading-none tracking-[-0.02em] font-bold;
+  }
+  .text-headline-lg {
+    @apply font-headline text-[2rem] leading-[1.1] font-semibold;
+  }
+  .text-title-lg {
+    @apply font-title text-[1.375rem] font-medium;
+  }
+  .text-body-lg {
+    @apply font-body text-[1rem] leading-[1.6];
+  }
+  .text-label-md {
+    @apply font-label text-[0.75rem] uppercase tracking-[0.05em];
+  }
+}
+
+/* Glass & Gradient Utility */
+.glass-overlay {
+  @apply backdrop-blur-[40px] bg-surface-container/50;
+}
