@@ -32,8 +32,8 @@ export function Hero() {
               Skambinkite dėl kainos
             </Button>
             <Button
-              variant="outline"
-              className="bg-[#f5f5f5] border-[#e5e5e5] font-display text-lg font-bold uppercase tracking-[0.9px] text-[#171717] hover:bg-[#e5e5e5] rounded-lg px-8 py-7"
+              variant="secondary"
+              className="bg-[#f5f5f5] border border-[#e5e5e5] font-display text-lg font-bold uppercase tracking-[0.9px] text-[#171717] hover:bg-[#e5e5e5] rounded-lg px-8 py-7"
             >
               Paslaugų sąrašas
             </Button>
