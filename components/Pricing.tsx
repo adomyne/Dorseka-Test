@@ -12,7 +12,7 @@ export function Pricing() {
   return (
     <section className="w-full bg-[#fafafa] rounded-[32px] px-6 sm:px-12 py-16 sm:py-24 max-w-[1200px] mx-auto overflow-hidden mt-12 md:mt-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
-        
+
         <div className="flex flex-col gap-12">
           <div className="space-y-4">
             <h2 className="text-[#171717] text-4xl sm:text-[48px] font-bold tracking-tight font-display">
@@ -44,19 +44,24 @@ export function Pricing() {
           </div>
         </div>
 
-        <div className="relative w-full aspect-square max-h-[600px] bg-[#e5e5e5] rounded-[32px] flex items-center justify-center overflow-hidden">
-          <div className="relative w-full h-[90%] opacity-90 shadow-[0_0_60px_rgba(232,93,1,0.15)] flex items-center justify-center p-8">
+        <div className="relative w-full aspect-square max-h-[600px] bg-[#eae6e0] rounded-[32px] ...">
+          <div className="relative w-full aspect-square max-h-[600px] bg-[#eae6e0] rounded-[32px] overflow-hidden flex items-center justify-center">
             <Image
               src="/assets/map.png"
               alt="Aptarnavimo Teritorija Lietuvoje"
               fill
               className="object-contain"
             />
+            {/* marker */}
+            <div className="absolute top-1/2 left-1/2 -mt-4 -ml-4 w-8 h-8 flex items-center justify-center z-10 animate-pulse">
+              <div className="absolute inset-0 rounded-full bg-[#e85d01] opacity-30 shadow-[0_0_20px_#e85d01] scale-150" />
+              <div className="relative w-4 h-4 rounded-full bg-[#e85d01] shadow-[0_0_10px_#e85d01]" />
+            </div>
           </div>
           {/* Simple marker approximation from Figma context */}
           <div className="absolute top-1/2 left-1/2 -mt-4 -ml-4 w-8 h-8 flex items-center justify-center z-10 animate-pulse">
-             <div className="absolute inset-0 rounded-full bg-[#e85d01] opacity-30 shadow-[0_0_20px_#e85d01] scale-150" />
-             <div className="relative w-4 h-4 rounded-full bg-[#e85d01] shadow-[0_0_10px_#e85d01]" />
+            <div className="absolute inset-0 rounded-full bg-[#e85d01] opacity-30 shadow-[0_0_20px_#e85d01] scale-150" />
+            <div className="relative w-4 h-4 rounded-full bg-[#e85d01] shadow-[0_0_10px_#e85d01]" />
           </div>
         </div>
 
