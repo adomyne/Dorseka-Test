@@ -8,7 +8,7 @@ export function Header() {
     <header className="fixed top-0 inset-x-0 z-50 flex h-20 items-center justify-between bg-white/80 px-6 backdrop-blur-md shadow-[0_4px_40px_rgba(232,93,1,0.04)] md:px-12">
       <div className="flex items-center">
         <Image
-          src="/assets/logo.svg"
+          src="/assets/Logo.svg"
           alt="Dorseka Logo"
           width={150} // Adjust width as needed
           height={40} // Adjust height as needed

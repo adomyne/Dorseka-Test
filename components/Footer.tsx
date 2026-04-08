@@ -107,7 +107,7 @@ export function Footer() {
         <div className="flex flex-col gap-6 items-center md:items-start">
           <div className="flex items-center">
             <Image
-              src="/assets/logo.svg"
+              src="/assets/Logo.svg"
               alt="Logo"
               width={150}
               height={40}
