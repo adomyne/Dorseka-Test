@@ -82,10 +82,10 @@ export function Fleet() {
         {trucks.map((truck) => (
           <div key={truck.id} className="flex flex-col w-full">
             <div className="relative w-full aspect-[16/10] flex items-center justify-center mb-8">
-              <div className="absolute inset-x-[10%] bottom-[5%] h-8 z-0">
+              <div className="absolute inset-x-[20%] bottom-[13%] h-8 z-0">
                 <Image src="/assets/ellipse.svg" alt="" fill className="object-contain" />
               </div>
-              <div className="relative z-10 w-full h-full">
+              <div className="relative z-10 w-[85%] h-[85%]">
                 <Image
                   src={truck.image}
                   alt={truck.name}
@@ -100,7 +100,7 @@ export function Fleet() {
               <h3 className="text-2xl font-bold text-[#171717] font-display">
                 {truck.name}
               </h3>
-              
+
               <div className="grid grid-cols-2 gap-y-6 lg:gap-y-10 gap-x-8">
                 {truck.stats.map((stat, i) => (
                   <div key={i} className="flex flex-col gap-1">
