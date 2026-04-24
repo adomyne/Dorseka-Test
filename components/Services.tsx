@@ -1,31 +1,17 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Layers, HardHat, Clock, Truck } from "lucide-react";
-
-const mainServices = [
-  {
-    title: "Kranų Nuoma",
-    description: "Profesionalių kranų nuoma įvairiems statybos ir pramonės projektams.",
-    image: "/assets/kranu-nuoma.png",
-    href: "#",
-  },
-  {
-    title: "Transportavimo Paslaugos",
-    description: "Specializuotos sunkiosios ir negabaritinių krovinių pervežimas.",
-    image: "/assets/transport-paslaugos.png",
-    href: "#",
-  },
-];
+import { TransportModal } from "./TransportModal";
+import { KranaiModal } from "./KranaiModal";
 
 const features = [
   {
-    title: "Ilgų Nuoma",
-    description: "Platus asortimentas, pritaikytas įvairiems kroviniams.",
+    title: "Platus ilgių spektras",
+    description: "Didelis mobilių kranų asortimentas, pritaikytas įvairiems kroviniams.",
     icon: Layers,
   },
   {
-    title: "Su Operatoriumi",
-    description: "Profesionalūs ir sertifikuoti operatoriai, užtikrinantys saugumą.",
+    title: "Profesionalūs operatoriai",
+    description: "Profesionalūs ir sertifikuoti operatoriai, užtikrinantys sklandumą.",
     icon: HardHat,
   },
   {
@@ -42,34 +28,41 @@ const features = [
 
 export function Services() {
   return (
-    <section className="w-full bg-[#fafafa] rounded-[32px] px-6 sm:px-12 py-16 sm:py-24 max-w-[1200px] mx-auto overflow-hidden mt-12 md:mt-24">
-      <h2 className="text-[#171717] text-4xl sm:text-5xl font-bold tracking-tight font-display mb-12 lg:mb-16">
+    <section className="w-full bg-[#fafafa] rounded-[32px] px-6 sm:px-12 py-16 sm:pt-16 sm:pb-8 max-w-[1000px] mx-auto overflow-hidden mt-12 md:mt-24">
+      <h2 className="text-[#171717] text-3xl sm:text-[42px] font-bold tracking-tight font-display mb-12 lg:mb-16">
         Mūsų Paslaugos
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-        {mainServices.map((service) => (
-          <div key={service.title} className="bg-white border-[#e5e5e5] border-[0.8px] rounded-2xl overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
-            <div className="relative h-[250px] w-full">
-              <Image src={service.image} alt={service.title} fill className="object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-            </div>
-            <div className="p-8 flex flex-col flex-1">
-              <h3 className="font-display font-bold text-2xl text-[#171717] mb-3">
-                {service.title}
-              </h3>
-              <p className="font-body text-[#525252] text-base leading-relaxed mb-8 flex-1">
-                {service.description}
-              </p>
-              <Link href={service.href} className="group flex flex-col w-max">
-                <span className="font-body font-medium text-sm text-[#e85d01] tracking-[0.7px] uppercase group-hover:text-[#d15200] transition-colors">
-                  Sužinoti daugiau
-                </span>
-                <div className="h-px w-full bg-[#e85d01] mt-1 group-hover:bg-[#d15200] transition-colors" />
-              </Link>
-            </div>
+        {/* Kranų Nuoma */}
+        <div className="bg-white border-[#e5e5e5] border-[0.8px] rounded-2xl overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
+          <div className="relative h-[250px] w-full">
+            <Image src="/assets/kranu-nuoma.png" alt="Kranų Nuoma" fill className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
           </div>
-        ))}
+          <div className="p-8 flex flex-col flex-1">
+            <h3 className="font-display font-bold text-2xl text-[#171717] mb-3">Kranų Nuoma</h3>
+            <p className="font-body text-[#525252] text-base leading-relaxed mb-8 flex-1">
+              Profesionalių kranų nuoma įvairiems statybos ir pramonės projektams.
+            </p>
+            <KranaiModal />
+          </div>
+        </div>
+
+        {/* Transportavimo Paslaugos */}
+        <div className="bg-white border-[#e5e5e5] border-[0.8px] rounded-2xl overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
+          <div className="relative h-[250px] w-full">
+            <Image src="/assets/transport-paslaugos.png" alt="Transportavimo Paslaugos" fill className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+          </div>
+          <div className="p-8 flex flex-col flex-1">
+            <h3 className="font-display font-bold text-2xl text-[#171717] mb-3">Transportavimo Paslaugos</h3>
+            <p className="font-body text-[#525252] text-base leading-relaxed mb-8 flex-1">
+              Specializuotos sunkiosios ir negabaritinių krovinių pervežimas.
+            </p>
+            <TransportModal />
+          </div>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

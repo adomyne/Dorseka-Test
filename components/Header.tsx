@@ -18,7 +18,7 @@ export function Header() {
 
 
       <nav className="hidden items-center gap-8 md:flex">
-        {["Kranai", "Paslaugos", "Aptarnavimas", "Kontaktai"].map((item) => (
+        {["Kranai", "Paslaugos", "Galerija", "Kontaktai"].map((item) => (
           <Link
             key={item}
             href={`#${item.toLowerCase()}`}

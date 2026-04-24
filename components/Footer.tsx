@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="relative w-full bg-[#f5f5f5] overflow-hidden mt-12 md:mt-24 border-t border-[#e5e5e5]">
+    <footer className="relative w-full bg-[#ffffff] overflow-hidden mt-12 md:mt-24">
       {/* Decorative Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[800px] h-[400px] bg-[rgba(232,93,1,0.1)] rounded-full blur-[120px] opacity-70 pointer-events-none" />
 

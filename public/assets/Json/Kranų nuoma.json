@@ -1,0 +1,49 @@
+{
+  "modal_id": "kranu_nuoma_detales",
+  "language": "lt",
+  "content": {
+    "header": {
+      "title": "Mobilių Kranų ir Manipuliatorių Nuoma",
+      "subtitle": "Efektyvus krovimas ir transportavimas vienu metu."
+    },
+    "body": {
+      "description": "Siūlome profesionalią sunkvežimių su kranais-manipuliatoriais (fiskarų) nuomą. Tai idealus sprendimas, kai reikia ne tik pervežti, bet ir savarankiškai pasikrauti ar išsikrauti sunkiasvorius krovinius riboto ploto statybvietėse.",
+      "benefits_title": "Mūsų technikos privalumai:",
+      "benefits": [
+        {
+          "label": "Mobilumas ir greitis",
+          "text": "Savaeigis kranas nereikalauja papildomo transportavimo – atvyksta, pakrauna ir pristato."
+        },
+        {
+          "label": "Didelė keliamoji galia",
+          "text": "Naudojame aukščiausios kokybės FASSI ir kitų lyderių kranus, tinkančius sudėtingiems kėlimo darbams."
+        },
+        {
+          "label": "Universalumas",
+          "text": "Puikiai tinka konteinerių, namelių, blokelių ar metalo konstrukcijų montavimui."
+        },
+        {
+          "label": "Sutaupytos lėšos",
+          "text": "Vienas automobilis atlieka ir krano, ir krovininio sunkvežimio funkciją."
+        }
+      ],
+      "services_list": [
+        "Statybinių medžiagų krovimas ir vežimas",
+        "Modulinių namelių ir konteinerių transportavimas",
+        "Įrangos kėlimas į aukštį (iki numatyto strėlės ilgio)",
+        "Gelžbetoninių gaminių montavimo darbai"
+      ]
+    },
+    "footer": {
+      "call_to_action_text": "Reikia pagalbos pasirenkant technikos galią? Pakonsultuosime ir parinksime tinkamiausią kraną jūsų objektui.",
+      "primary_button": {
+        "text": "Rezervuoti techniką",
+        "action": "open_booking_form"
+      },
+      "secondary_button": {
+        "text": "Klausti kainos",
+        "action": "tel:+37000000000"
+      }
+    }
+  }
+}

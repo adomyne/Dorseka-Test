@@ -1,0 +1,49 @@
+{
+  "modal_id": "transportavimo_paslaugos_detales",
+  "language": "lt",
+  "content": {
+    "header": {
+      "title": "Patikimas Sunkiasvorių Krovinių Transportavimas",
+      "subtitle": "Specializuoti sprendimai jūsų logistikos iššūkiams."
+    },
+    "body": {
+      "description": "Mes suprantame, kad negabaritiniai ir sunkiasvoriai kroviniai reikalauja ne tik galingos technikos, bet ir preciziško planavimo. Mūsų komanda pasirūpinti visais procesais, kad jūsų krovinys pasiektų tikslą saugiai ir laiku.",
+      "benefits_title": "Kodėl verta rinktis mus?",
+      "benefits": [
+        {
+          "label": "Specializuotas parkas",
+          "text": "Naudojame modernią techniką, pritaikytą specifiniams statybų ir pramonės poreikiams."
+        },
+        {
+          "label": "Patirtis su negabaritais",
+          "text": "Žinome, kaip saugiai pritvirtinti ir pervežti bet kokio svorio konstrukcijas ar techniką."
+        },
+        {
+          "label": "Dokumentacijos tvarkymas",
+          "text": "Pasirūpiname visais reikiamais maršrutų suderinimais ir leidimais."
+        },
+        {
+          "label": "Lankstumas",
+          "text": "Dirbame visoje Lietuvoje, prisitaikydami prie jūsų projektų terminų."
+        }
+      ],
+      "services_list": [
+        "Statybinės technikos pervežimas",
+        "Negabaritinių konstrukcijų transportavimas",
+        "Birių medžiagų tiekimas dideliais kiekiais",
+        "Logistikos konsultacijos"
+      ]
+    },
+    "footer": {
+      "call_to_action_text": "Turite konkretų užsakymą ar klausimą? Mūsų specialistai padės apskaičiuoti optimaliausią maršrutą.",
+      "primary_button": {
+        "text": "Gauti pasiūlymą",
+        "action": "open_contact_form"
+      },
+      "secondary_button": {
+        "text": "Skambinti",
+        "action": "tel:+37000000000"
+      }
+    }
+  }
+}
