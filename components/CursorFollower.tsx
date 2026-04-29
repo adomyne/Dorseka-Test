@@ -8,7 +8,6 @@ import { useEffect, useRef, useState } from 'react';
 //  DOT_SPEED  — dot chases the cursor each frame. Try 4 (lazy) → 12 (snappy).
 //  RING_SPEED — ring trails further behind.   Try 2 (dreamy) → 6 (tight).
 const DOT_SPEED = 3;
-const RING_SPEED = 0.04;
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function CursorFollower() {
@@ -103,15 +102,12 @@ export default function CursorFollower() {
       const dt = Math.min((now - lastTime.current) / 1000, 0.1); // seconds, capped at 100ms
       lastTime.current = now;
 
-      // Ring: exponential lerp — same feel at any refresh rate
-      const ringT = prefersReduced ? 1 : 1 - Math.exp(-RING_SPEED * dt);
-
       // Dot: exponential lerp — chases the cursor, fast when far, slow when close
       const dotT = prefersReduced ? 1 : 1 - Math.exp(-DOT_SPEED * dt);
       dotPos.current.x = lerp(dotPos.current.x, mouse.current.x, dotT);
       dotPos.current.y = lerp(dotPos.current.y, mouse.current.y, dotT);
-      ringPos.current.x = lerp(ringPos.current.x, mouse.current.x, ringT);
-      ringPos.current.y = lerp(ringPos.current.y, mouse.current.y, ringT);
+      ringPos.current.x = dotPos.current.x;
+      ringPos.current.y = dotPos.current.y;
 
       if (dotRef.current) {
         dotRef.current.style.transform =
