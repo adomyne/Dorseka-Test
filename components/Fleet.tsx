@@ -18,8 +18,8 @@ interface FleetProps {
 
 export function Fleet({ trucks }: FleetProps) {
   return (
-    <section className="w-full bg-[#fafafa] rounded-[32px] px-6 sm:px-12 py-16 sm:pt-24 sm:pb-30 max-w-[1000px] mx-auto overflow-hidden">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16 md:mb-[96px]">
+    <section className="w-full bg-[#fafafa] rounded-[32px] px-6 sm:px-12 py-8 sm:pt-16 sm:pb-20 max-w-[1000px] mx-auto overflow-hidden">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8 md:mb-[72px]">
         <div className="flex flex-col gap-4">
           <p className="text-[#e85d01] uppercase tracking-[1.4px] text-sm font-medium font-title">
             Parkas

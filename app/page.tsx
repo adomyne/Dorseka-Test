@@ -23,13 +23,13 @@ export default async function Home() {
         <div id="mūsų-technika" className="w-full px-20 mb-4 mt-16">
           <Fleet trucks={fleetData} />
         </div>
-        <div id="paslaugos" className="w-full px-20 mb-4 mt-8">
+        <div id="paslaugos" className="w-full px-20 mb-4 mt-4">
           <Services />
         </div>
-        <div className="w-full px-20 mb-4 mt-8">
+        <div className="w-full px-20 mb-4 mt-4">
           <Gallery images={galleryData} />
         </div>
-        <div className="w-full px-20 mb-4 mt-8">
+        <div className="w-full px-20 mb-4 mt-4">
           <Pricing items={pricingData} />
         </div>
       </main>
