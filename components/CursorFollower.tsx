@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from 'react';
 //  Formula: t = 1 - e^(-speed * dt)  →  same feel at 60 Hz, 120 Hz, 144 Hz.
 //  DOT_SPEED  — dot chases the cursor each frame. Try 4 (lazy) → 12 (snappy).
 //  RING_SPEED — ring trails further behind.   Try 2 (dreamy) → 6 (tight).
-const DOT_SPEED = 3;
+const DOT_SPEED = 1.5;
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function CursorFollower() {

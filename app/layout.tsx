@@ -9,6 +9,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space
 export const metadata: Metadata = {
   title: "Dorseka – mobilių kranų nuoma visoje Lietuvoje",
   description: "Sunkioji technika sudėtingiems projektams. Dirbame visoje Lietuvoje 24/7",
+  icons: { icon: "/assets/Logo icon.png" },
 };
 
 export default function RootLayout({
